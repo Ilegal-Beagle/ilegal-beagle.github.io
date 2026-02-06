@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<title>epic title</title>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Scrolling text area -->
+    <div class="scrollingText">
+        <p id="scroll"></p>
+        <script>
+        const text = [
+            "I am within your walls!",
+            "I am the best web designer ever!",
+            "look behind you!"
+        ];
+
+        const randomIndex = Math.floor(Math.random() * text.length);
+        document.getElementById("scroll").innerText = text[randomIndex];
+    </script>
+    </div>
+
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <pre></pre>
+        <img src="assets/me.jpg" width="100px" height="100px">
+        <h2>Adrian Munoz</h2>
+        <a href="page1.html">Home</a>
+        <a href="page2.html">Projects</a>
+        <a href="page2.html">Resume</a>
+        <a href="page2.html">art</a>
+        <a href="https://github.com/ilegal-beagle">GitHub</a>
+    </div>
+    
+
+    <!-- content panel -->
+    <div class="content">
+        <div class="home">
+            <h1>Home</h1>
+            <hr>
+            <h2>About</h2>
+            <h3>Languages</h3>
+            <p>
+                Familiar with Python<br>
+                Learning Rust, C/C++, Lua, Javascript
+            </p>
+
+            <h3>Tools</h3>
+            <p>
+                git, Docker, linux
+            </p>
+        </div>
+
+        <h1>Projects</h1>
+        <hr>
+
+        <div class="projectCard">
+            <h2>Korean Chess</h2>
+            <img src="assets/dog.jpg" height="50%" width="50%"> <br>
+            <p>
+                Used Python and the Pygame library to create a chess variant called Janggi
+
+                <h3>Features</h3>
+                <ul>
+                    <li>Mostly functional pieces</li>
+                    <li>Resizable UI</li>
+                </ul>
+            
+            </p>
+        </div>
+
+        <div class="projectCard">
+            <h2>Music Player</h2>
+            <img src="assets/dog.jpg" height="50%" width="50%"> <br>
+            <p>
+                Lead a team to make a music playing app using Dart and Flutter.
+
+                <h3>Features</h3>
+                <ul>
+                    <li>Load a music library from your local music files</li>
+                    <li>Play and queue music from your library</li>
+                    <li>Basic LastFM API functionality, allowing you to look at Album covers from LastFM</li>
+                </ul>
+            </p>
+        </div>
+            
+        <div class="projectCard">
+            <h2>Chat Room</h2>
+            <img src="assets/dog.jpg" height="50%" width="50%"> <br>
+            <p>
+                used Rust to make a multithreaded TCP chat room.
+
+                <h3>Features</h3>
+                <ul>
+                    <li>Chat between two machines on the same network</li>
+                    <li>supports two or more clients at once</li>
+                    <li>Supports sending images in the chatroom</li>
+                    <li>Tenor API gif support</li>
+                </ul>
+            </p>
+        </div>
+        
+    </div>
+
+</body>
+
+<footer>
+</footer>
