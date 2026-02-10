@@ -89,6 +89,11 @@ body {
     border-radius: 10px;
 }
 
-.projectCard :hover {
+.projectCard :hover ::before {
     filter: drop-shadow(0px 0px 5px);
+}
+
+.projectImage {
+    width: 50%;
+    height: 50%;
 }
